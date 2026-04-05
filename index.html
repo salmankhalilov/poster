@@ -4,7 +4,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sanremo 2026 Festival Kazakhstan</title>
+<title>Sanremo Festival Kazakhstan</title>
 <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Bebas+Neue&family=Montserrat:wght@300;400;500;700;900&family=Cormorant:ital,wght@1,300;1,400;1,700&display=swap" rel="stylesheet">
 <style>
 * { margin:0; padding:0; box-sizing:border-box; }
@@ -117,6 +117,37 @@ body {
   background: linear-gradient(90deg, transparent, rgba(212,175,55,0.08), transparent);
 }
 
+/* ── TOP BADGE ── */
+.top-badge {
+  position: absolute;
+  top: 38px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 20;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 680px;
+}
+
+.badge-presents {
+  font-size: 9px;
+  font-weight: 500;
+  letter-spacing: 6px;
+  color: rgba(197,162,76,0.7);
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.badge-logos {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 14px;
+}
+.blogo { font-size: 10px; font-weight: 800; color: rgba(255,255,255,0.5); letter-spacing: 2px; text-transform: uppercase; }
+.blogo-sep { width: 1px; height: 14px; background: rgba(197,162,76,0.35); }
+
 /* ── MAIN TITLE ── */
 .main-title {
   position: absolute;
@@ -153,11 +184,11 @@ body {
 .title-line2 {
   display: block;
   font-family: 'Bebas Neue', sans-serif;
-  font-size: 56px;
-  letter-spacing: 16px;
+  font-size: 32px;
+  letter-spacing: 22px;
   color: rgba(255,255,255,0.75);
-  margin-top: 6px;
-  text-indent: 0;
+  margin-top: 4px;
+  text-indent: 22px;
 }
 
 .title-line3 {
@@ -488,13 +519,24 @@ body {
 <div class="cm cm-br"></div>
 
   <!-- TOP BADGE -->
+  <div class="top-badge">
+    <div class="badge-presents">Astana Concert &amp; CA Entertainment presentano</div>
+    <div class="badge-logos">
+      <span class="blogo">Astana Concert</span>
+      <div class="blogo-sep"></div>
+      <span class="blogo">CA Entertainment</span>
+      <div class="blogo-sep"></div>
+      <span class="blogo">Freedom Ticketon</span>
+    </div>
+  </div>
+
   <!-- MAIN TITLE -->
   <div class="main-title">
     <span class="title-line1"><span>S</span>anremo</span>
-    <span class="title-line2">2026</span>
+    <span class="title-line2">Festival</span>
     <div class="title-line3">
       <div class="t3-line"></div>
-      <div class="t3-text">Festival in Kazakhstan</div>
+      <div class="t3-text">in Kazakhstan · 2025</div>
       <div class="t3-line r"></div>
     </div>
   </div>
